@@ -8,7 +8,7 @@ db.sequelize.sync({force:true}).then(()=>{
     console.log('Drop and Resync with {force:true');
 })
 
-let router = require('./app/routers/excel.router.js');
+let router = require('./app/routers/csv.router.js');
 app.use(express.static('resources'));
 app.use('/', router)
 
